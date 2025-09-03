@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        
+        form {
+            box-shadow: 0 1px 3px rgba(50, 50, 93, .15), 0 1px 0 blue;
+            border: 1px solid #d7d7d7;
+            background-color:blueviolet;
+        }
+        input[type=text],
+        input[type=password],
+        input[type=email]
+        {
+            width: 100%;
+            display: inline-block;
+            border: 1px solid blue;
+            box-sizing: border-box;
+            box-shadow: 0 1px 3px rgba(50, 50, 93, .15), 0 1px 0 rgba(0, 0, 0, .02);
+        }
+        input:focus {
+            background-color:gold;
+        }
+        button {
+            background-color: #4CAF50;
+            color: #FFF;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .26);
+                
+        }
+    </style>
+</head>
+<body>
+    <h2>Job Registration Form</h2>
+    <form>
+        <div class="container">
+            <label>Username</label>
+            <input type="text" name="uname" required placeholder="Enter your name"><br>
+            <label>your ID</label>
+            <input type="text" name="ID" required placeholder="Enter your ID"><br>
+            <label> email </label><br>
+            <input type="email" name="email" required>
+            <br>
+            <label>Password</label>
+            <input type="password" name="pass" required>
+             <label>Contact</label>
+            <input type="password" name="cont" required>
+            <button type="submit">Sign in</button>
+        </div>
+    </form>
+
+</body>
+</html>
