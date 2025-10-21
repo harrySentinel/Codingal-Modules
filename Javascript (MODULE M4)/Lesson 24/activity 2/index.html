@@ -1,0 +1,20 @@
+<html>
+
+  <head>
+   <title id="title1">DOM Structure</title>
+  </head>
+
+  <body>
+    <h1>DOM Nodes Example</h1>
+    <p id="output1"></p>    
+    <p id="output2"></p>
+    <p id="output3"></p>
+   	
+    <script>
+        document.getElementById("output1").innerHTML = document.getElementById("title1").innerHTML;
+        document.getElementById("output2").innerHTML = document.getElementById("title1").firstChild.nodeValue;
+        document.getElementById("output3").innerHTML = document.getElementById("title1").childNodes[0].nodeValue;
+    </script>
+  </body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Array Methods Example</h2>
+    <h4>Using join() and pop()</h4>
+    <p>join combines array items, pop removes the last one</p>
+    
+
+<p id="joined"></p>
+    <p id="firstarray"></p>
+    <p id="changedarray"></p>
+<script>
+    var stuff = ["Table","Chair","Lamp","Fan"];
+    
+    document.getElementById("joined").innerHTML = stuff.join(" | ");
+    document.getElementById("firstarray").innerHTML = stuff;
+    stuff.pop();
+    document.getElementById("changedarray").innerHTML = stuff
+
+</script>
+
+</body>
+</html>

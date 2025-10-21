@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Array Methods</h2>
+    <h3>join and pop methods</h3>
+    <p>join makes array into string, pop takes out last item</p>
+    
+
+<p id="showjoin"></p>
+    <p id="original"></p>
+    <p id="modified"></p>
+<script>
+    var items = ["Pen","Book","Pencil","Eraser"];
+    
+    document.getElementById("showjoin").innerHTML = items.join(" + ");
+    document.getElementById("original").innerHTML = items;
+    items.pop();
+    document.getElementById("modified").innerHTML = items
+
+</script>
+
+</body>
+</html>

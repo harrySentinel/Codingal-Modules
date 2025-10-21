@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>variable scoping</p>
+    <button type="button" onclick="runFunction()">Click Here!</button>
+    <p id="result"></p>
+    <p id="result2"></p>
+    <script>
+
+      function runFunction() {
+        var num = 6;
+        document.getElementById("result").innerHTML = num * num;
+      } 
+      document.getElementById("result2").innerHTML = num;  
+    </script>
+    
+  </body>
+</html>

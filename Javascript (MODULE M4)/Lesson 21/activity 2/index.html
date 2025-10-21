@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>The test() method checks for a match and returns true or false !</p>
+    <p>Click to search for the word "learn" in the text !</p>
+    <button onclick="searchFunction()">Check</button>
+    <p id="result"></p>
+    <script>
+      function searchFunction() {
+        var text = "We learn about programming";
+        var pattern = new RegExp("learn");
+        var found = pattern.test(text);
+        document.getElementById("result").innerHTML = found;
+      }
+    </script>
+  </body>
+</html>
