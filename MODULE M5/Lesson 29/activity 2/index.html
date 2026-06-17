@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Callback Function</h2>
+<p id="demo"></p>
+
+<script>
+function display(value) {
+  document.getElementById("demo").innerHTML = value;
+}
+
+function add(a, b, callback) {
+  var sum = a + b;
+  callback("Sum is " + sum);
+}
+
+add(5, 7, display);
+</script>
+
+</body>
+</html>

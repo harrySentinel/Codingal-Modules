@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Class Inheritance</h2>
+<p id="demo"></p>
+
+<script>
+class Animal {
+  sound() {
+    return "Animals make sounds";
+  }
+}
+
+class Dog extends Animal {
+  bark() {
+    return "Dog barks";
+  }
+}
+
+var pet = new Dog();
+document.getElementById("demo").innerHTML =
+pet.sound() + "<br>" + pet.bark();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Static Method</h2>
+<p id="demo"></p>
+
+<script>
+class Calculator {
+  static add(a, b) {
+    return a + b;
+  }
+}
+
+document.getElementById("demo").innerHTML =
+"Sum is " + Calculator.add(10, 5);
+</script>
+
+</body>
+</html>

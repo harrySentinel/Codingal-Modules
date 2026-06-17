@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JSON in JavaScript</h2>
+<p id="demo"></p>
+
+<script>
+var student = '{"name":"Rahul","class":8,"city":"Delhi"}';
+var obj = JSON.parse(student);
+
+document.getElementById("demo").innerHTML =
+obj.name + " is in class " + obj.class;
+</script>
+
+</body>
+</html>

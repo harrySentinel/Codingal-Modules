@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Promise in JavaScript</h2>
+<p id="demo"></p>
+
+<script>
+var promise = new Promise(function(resolve, reject) {
+  var workDone = true;
+
+  if (workDone) {
+    resolve("Work is completed");
+  } else {
+    reject("Work is not completed");
+  }
+});
+
+promise.then(function(message) {
+  document.getElementById("demo").innerHTML = message;
+});
+</script>
+
+</body>
+</html>

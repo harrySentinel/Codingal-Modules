@@ -1,0 +1,33 @@
+body {
+  background-color: #1f2235;
+}
+
+
+#social-media {
+  background-color: #1f2235;
+}
+
+
+.media_link {
+  background-color: #2f2f4f;
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+
+.media_link i {
+  font-size: 24px;
+  color: #9fa8da;
+}
+
+.media_link:hover {
+  background-color: #3f3f6f;
+}
+
+
+footer {
+  background-color: #111;
+}

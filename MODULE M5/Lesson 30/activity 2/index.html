@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Validation using API</h2>
+
+<input id="pin" placeholder="Enter pincode">
+<button onclick="checkPin()">Check</button>
+<p id="result"></p>
+
+<script>
+function checkPin() {
+  var pin = document.getElementById("pin").value;
+
+  fetch("https://api.postalpincode.in/pincode/" + pin)
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(data) {
+    document.getElementById("result").innerHTML = data[0].Message;
+  });
+}
+</script>
+
+</body>
+</html>

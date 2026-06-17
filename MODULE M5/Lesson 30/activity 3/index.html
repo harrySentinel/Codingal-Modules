@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Calculator using JavaScript</h2>
+
+<input id="num1" type="number" placeholder="First number">
+<input id="num2" type="number" placeholder="Second number">
+
+<br><br>
+<button onclick="calculate('add')">Add</button>
+<button onclick="calculate('subtract')">Subtract</button>
+<button onclick="calculate('multiply')">Multiply</button>
+<button onclick="calculate('divide')">Divide</button>
+<button onclick="clearAnswer()">Clear</button>
+
+<p id="answer"></p>
+
+<script>
+function calculate(type) {
+  var a = Number(document.getElementById("num1").value);
+  var b = Number(document.getElementById("num2").value);
+  var result;
+
+  if (type == "add") {
+    result = a + b;
+  } else if (type == "subtract") {
+    result = a - b;
+  } else if (type == "multiply") {
+    result = a * b;
+  } else if (type == "divide") {
+    if (b == 0) {
+      result = "Cannot divide by zero";
+    } else {
+      result = a / b;
+    }
+  }
+
+  document.getElementById("answer").innerHTML = "Answer: " + result;
+}
+
+function clearAnswer() {
+  document.getElementById("num1").value = "";
+  document.getElementById("num2").value = "";
+  document.getElementById("answer").innerHTML = "";
+}
+</script>
+
+</body>
+</html>

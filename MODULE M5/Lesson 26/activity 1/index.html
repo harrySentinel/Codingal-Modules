@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>this Keyword</h2>
+<p id="demo"></p>
+
+<script>
+var student = {
+  name: "Aman",
+  age: 13,
+  details: function() {
+    return this.name + " is " + this.age + " years old";
+  }
+};
+
+document.getElementById("demo").innerHTML = student.details();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Random Numbers</h2>
+<p id="numbers"></p>
+
+<script>
+var text = "";
+var count = 1;
+
+while (count <= 5) {
+  var number = Math.floor(Math.random() * 10) + 1;
+  text = text + number + "<br>";
+  count++;
+}
+
+document.getElementById("numbers").innerHTML = text;
+</script>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+import sqlite3
+
+print("What is a Database?")
+print("A database is an organized collection of data stored electronically.")
+print()
+print("Types of Databases:")
+print("1. Relational Database - stores data in tables (e.g. SQLite, MySQL)")
+print("2. NoSQL Database - stores data in documents (e.g. MongoDB)")
+print()
+print("What is SQLite?")
+print("SQLite is a lightweight, file-based relational database.")
+print("It comes built-in with Python - no installation needed!")
+print()
+print("SQLite version:", sqlite3.sqlite_version)
+print("Python sqlite3 module version:", sqlite3.version)

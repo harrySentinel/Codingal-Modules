@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Class</h2>
+<p id="demo"></p>
+
+<script>
+class Student {
+  constructor(name, grade) {
+    this.name = name;
+    this.grade = grade;
+  }
+}
+
+var s1 = new Student("Neha", 7);
+document.getElementById("demo").innerHTML =
+s1.name + " studies in grade " + s1.grade;
+</script>
+
+</body>
+</html>

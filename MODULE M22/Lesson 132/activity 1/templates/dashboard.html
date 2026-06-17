@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <style>
+        body { font-family: Arial; background: #f0f4f8; display: flex; justify-content: center; align-items: center; height: 100vh; }
+        .card { background: white; padding: 50px; border-radius: 14px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        h2 { color: #27ae60; }
+        p { color: #555; margin: 15px 0; }
+        a { background: #e74c3c; color: white; padding: 10px 25px; border-radius: 7px; text-decoration: none; font-size: 15px; }
+        a:hover { background: #c0392b; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Welcome, {{ username }}! 🎉</h2>
+        <p>You are successfully logged in to Codingal.</p>
+        <a href="/logout">Logout</a>
+    </div>
+</body>
+</html>

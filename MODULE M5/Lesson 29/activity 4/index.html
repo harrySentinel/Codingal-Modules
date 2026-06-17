@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Async and Await</h2>
+<p id="demo"></p>
+
+<script>
+function getMessage() {
+  return Promise.resolve("Hello from async function");
+}
+
+async function showMessage() {
+  var message = await getMessage();
+  document.getElementById("demo").innerHTML = message;
+}
+
+showMessage();
+</script>
+
+</body>
+</html>

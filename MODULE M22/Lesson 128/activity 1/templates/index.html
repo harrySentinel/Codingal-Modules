@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Predictor</title>
+    <style>
+        body { font-family: Arial; background: #e8f4fd; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }
+        .card { background: white; padding: 40px; border-radius: 14px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 340px; }
+        h2 { text-align: center; color: #2980b9; }
+        label { font-size: 14px; color: #555; }
+        input { width: 100%; padding: 9px; margin: 6px 0 15px; border: 1px solid #ccc; border-radius: 6px; font-size: 14px; box-sizing: border-box; }
+        button { width: 100%; background: #2980b9; color: white; border: none; padding: 11px; border-radius: 6px; font-size: 16px; cursor: pointer; }
+        button:hover { background: #1a6fa0; }
+        .result { text-align: center; margin-top: 20px; font-size: 24px; font-weight: bold; color: #2c3e50; }
+        .icon { font-size: 50px; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>🌦️ Weather Predictor</h2>
+        <form method="POST">
+            <label>Temperature (°C)</label>
+            <input type="number" name="temp" placeholder="e.g. 30" required>
+            <label>Humidity (%)</label>
+            <input type="number" name="humidity" placeholder="e.g. 75" required>
+            <label>Wind Speed (km/h)</label>
+            <input type="number" name="wind" placeholder="e.g. 20" required>
+            <button type="submit">Predict Weather</button>
+        </form>
+        {% if weather %}
+        <div class="result">
+            <div class="icon">{{ icon }}</div>
+            <div>{{ weather }}</div>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>

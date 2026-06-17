@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Sort and Reverse Numbers</h2>
+<p id="demo"></p>
+
+<script>
+var numbers = [30, 5, 12, 9];
+
+numbers.sort(function(a, b) {
+  return a - b;
+});
+
+numbers.reverse();
+
+document.getElementById("demo").innerHTML = numbers;
+</script>
+
+</body>
+</html>
