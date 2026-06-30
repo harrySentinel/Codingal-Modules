@@ -1,0 +1,36 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #1a1a2e;
+}
+
+.social-section h2 {
+  color: #fff;
+}
+
+.social-section p {
+  color: #aaa;
+}
+
+.social-icon {
+  font-size: 2rem;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+  opacity: 0.85;
+}
+
+.github    { background-color: #333; }
+.linkedin  { background-color: #0077b5; }
+.twitter   { background-color: #000; }
+.instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+.youtube   { background-color: #ff0000; }

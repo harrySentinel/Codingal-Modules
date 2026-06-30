@@ -1,0 +1,25 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+}
+
+.contact-section h2 {
+  color: #1a1a2e;
+}
+
+.form-control {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 10px 14px;
+}
+
+.form-control:focus {
+  border-color: #0f3460;
+  box-shadow: 0 0 0 0.2rem rgba(15,52,96,0.2);
+}
+
+button {
+  border-radius: 8px;
+  padding: 10px;
+  font-weight: 600;
+}
