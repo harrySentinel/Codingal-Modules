@@ -1,0 +1,21 @@
+print("=== Underfitting vs Overfitting ===\n")
+
+print("Example 1:")
+print("A student prepares one night before the exam and covers all questions,")
+print("whether relevant or irrelevant to the exam.")
+print("Answer: Overfitting")
+print("Reason: The model memorises everything including noise, and fails to generalise.\n")
+
+print("Example 2:")
+print("A student has significantly less study material one night before the exam")
+print("and will not be able to perform well.")
+print("Answer: Underfitting")
+print("Reason: The model hasn't learned enough to make good predictions.\n")
+
+print("Example 3:")
+print("We grow up in a specific culture and learn to interpret social signals.")
+print("When we move to another country with different rules, we misinterpret")
+print("interactions we haven't encountered before.")
+print("Answer: Overfitting")
+print("Reason: The model was trained too specifically on one dataset (culture)")
+print("and fails on new unseen data (new country).")
