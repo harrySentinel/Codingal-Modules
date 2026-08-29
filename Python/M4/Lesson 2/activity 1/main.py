@@ -1,0 +1,11 @@
+student = ("Aditya Srivastava", 16, "V")
+print("Student record:", student)
+print("Name:", student[0])
+print("Age:", student[1])
+print("Class:", student[2])
+
+marks = (78, 85, 92, 60, 74)
+print("Marks tuple:", marks)
+print("Highest mark:", max(marks))
+print("Lowest mark:", min(marks))
+print("Total subjects:", len(marks))
